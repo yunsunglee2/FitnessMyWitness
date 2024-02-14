@@ -1,12 +1,18 @@
-import React from 'react';
-import { Main } from '../main';
-import { Banner } from '../banner';
+import React from "react";
+import styled from "styled-components";
+import { Main } from "../main";
+import { Header } from "../header";
+
+const LandingPageLayout = styled.div`
+  display: flex;
+  height: 100vh;
+`;
 
 export const LandingPage = () => {
   return (
-    <div className='landing-page'>
-      <Banner />
+    <LandingPageLayout>
+      <Header />
       <Main />
-    </div>
-  )
-}
+    </LandingPageLayout>
+  );
+};
